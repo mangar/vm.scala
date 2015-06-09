@@ -16,6 +16,12 @@ vagrantfile:
                 vflnp_j9jix64ns069:
                     host: '8080'
                     guest: '8080'
+                vflnp_nefv083nefvn:
+                    host: '5672'
+                    guest: '5672'
+                vflnp_0823fb980uef:
+                    host: '6379'
+                    guest: '6379'
         post_up_message: ''
         provider:
             virtualbox:
