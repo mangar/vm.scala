@@ -25,9 +25,10 @@ For extra configuration, such as Java and Scala instalation, you have to check t
 ### Extra software
 
 
-* Java8 - Oracle
+* Java8 - Oracle (startup / shutdown on command line to start and stop Tomcat)
 * Scala 2.6.11
-
+* Tomcat 8
+* Gradle
 
 
 ## What's next
