@@ -13,6 +13,9 @@ vagrantfile:
                 vflnp_ikcf6kpauwfs:
                     host: '5747'
                     guest: '22'
+                vflnp_ojfnv98ef98c:
+                    host: '8079'
+                    guest: '80'
                 vflnp_j9jix64ns069:
                     host: '8080'
                     guest: '8080'
@@ -102,50 +105,7 @@ nginx:
         proxy_buffer_size: 128k
         proxy_buffers: '4 256k'
     upstreams: {  }
-    vhosts:
-        nxv_19nretlrafhb:
-            server_name: awesome.dev
-            server_aliases:
-                - www.awesome.dev
-            www_root: /var/www/awesome
-            listen_port: '80'
-            index_files:
-                - index.html
-                - index.htm
-                - index.php
-            client_max_body_size: 1m
-            ssl: '0'
-            ssl_cert: ''
-            ssl_key: ''
-            ssl_port: '443'
-            ssl_protocols: ''
-            ssl_ciphers: ''
-            rewrite_to_https: '1'
-            spdy: '1'
-            locations:
-                nxvl_ooqd6w432noy:
-                    location: /
-                    autoindex: off
-                    try_files:
-                        - $uri
-                        - $uri/
-                        - /index.php$is_args$args
-                    fastcgi: ''
-                    fastcgi_index: ''
-                    fastcgi_split_path: ''
-                nxvl_6b7y3lzzt2xu:
-                    location: '~ \.php$'
-                    autoindex: off
-                    try_files:
-                        - $uri
-                        - $uri/
-                        - /index.php$is_args$args
-                    fastcgi: '127.0.0.1:9000'
-                    fastcgi_index: index.php
-                    fastcgi_split_path: '^(.+\.php)(/.*)$'
-                    fast_cgi_params_extra:
-                        - 'SCRIPT_FILENAME $request_filename'
-                        - 'APP_ENV dev'
+    vhosts: { }
     proxies: {  }
 apache:
     install: '0'
