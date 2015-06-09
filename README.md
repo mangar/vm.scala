@@ -22,12 +22,20 @@ You can check the file: ````puphpet/config.yaml```` for the default system insta
 For extra configuration, such as Java and Scala instalation, you have to check the directory: ````puphpet/files/startup-once-unprivileged````
 
 
+### Extra software
+
+
+* Java8 - Oracle
+* Scala 2.6.11
+
+
 
 ## What's next
 
 Improve! Destroy! Recreate! Modify! Enjoy!
 
-- - - 
+
+
 ## License
 
 The MIT License (MIT)
