@@ -43,7 +43,7 @@ vagrantfile:
                     - '--parser future'
         synced_folder:
             vflsf_r7q8j3xfj8qf:
-                source: /Users/mg/Projects/_github/scala-kindle-doc
+                source: ./
                 target: /var/www
                 sync_type: nfs
                 smb:      
